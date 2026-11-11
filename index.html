@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nahbar – Talk to a therapist today</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+<header><span class="logo">Nahbar<i></i></span><a href="#plans">Pricing</a></header>
+
+<h1>Talk to a therapist today.</h1>
+<p class="lead">Pick what’s on your mind and when you’re free. See licensed therapists with open times, including later today, and start with a free 14-day trial.</p>
+
+<div class="finder" id="finder">
+<h2>Find your therapist</h2>
+<div class="group"><p>What would you like help with?</p><div class="chips" id="topics"></div></div>
+<div class="group"><p>When are you free?</p><div class="chips" id="when"></div></div>
+<div class="group"><p>Session format</p><div class="chips" id="fmt"></div></div>
+<div class="group"><p>Language</p><div class="chips" id="lang"></div></div>
+<div id="results" aria-live="polite"></div>
+</div>
+
+<section>
+<h2>How it works</h2>
+<ol class="how">
+<li><b>Tell us what you need.</b> Choose a topic, a time and a format.</li>
+<li><b>Pick a therapist.</b> Every therapist is a licensed psychotherapist. Read their approach, then choose an open time.</li>
+<li><b>Start your free trial.</b> Your first sessions are free for 14 days. Cancel any time before it ends.</li>
+</ol>
+</section>
+
+<section id="plans">
+<h2>Pricing that’s easy to start</h2>
+<p class="lead">Try it free for 14 days. Then choose what fits your budget.</p>
+<div class="plans">
+<div class="plan"><h3>Pay as you go</h3><div class="price">€69<small> / session</small></div><p class="meta">No commitment.</p><ul><li>Book when you need it</li><li>Same-day times</li></ul></div>
+<div class="plan best"><h3>Monthly</h3><div class="price">€129<small> / month</small></div><p class="meta">Best for regular support.</p><ul><li>2 sessions a month</li><li>Message your therapist</li><li>Pause or cancel any time</li></ul></div>
+<div class="plan"><h3>Sliding scale</h3><div class="price">From €39<small> / session</small></div><p class="meta">Lower rates based on income.</p><ul><li>Simple self-report</li><li>No paperwork</li></ul></div>
+</div>
+</section>
+
+<section id="faq">
+<h2>Good to know</h2>
+<details><summary>Does my insurance pay?</summary><p>Sessions on Nahbar are paid by you. Some private insurers (PKV) reimburse them, so ask yours. If you’re on statutory insurance, you can also call 116 117 to book an initial appointment with a therapist who bills your Krankenkasse.</p></details>
+<details><summary>Who are the therapists?</summary><p>Psychologische Psychotherapeut:innen and ärztliche Psychotherapeut:innen with a licence (Approbation). We check every licence before a profile goes live.</p></details>
+<details><summary>Is my data private?</summary><p>Yes. Your data is stored in the EU and handled under the GDPR (DSGVO). Video sessions are end-to-end encrypted.</p></details>
+<details><summary>Can I cancel the trial?</summary><p>Any time before day 14, with one tap. You won’t be charged.</p></details>
+</section>
+<footer>
+<p><b>Need help right now?</b> Call the Telefonseelsorge for free, any time: 0800 111 0 111 or 0800 111 0 222. In an emergency, call 112.</p>
+<p>Prototype: therapists, prices and claims shown are sample content.</p>
+</footer>
+</div>
+
+<dialog id="dlg"><h2 id="dt">Confirm your session</h2><div class="sum" id="ds"></div><p class="meta">Your 14-day free trial starts today. You won’t be charged until it ends.</p><button class="btn" id="ok">Start free trial and book</button><button class="btn ghost" id="no">Back</button></dialog>
+
+<script src="app.js" defer></script>
+</body>
+</html>
